@@ -1,11 +1,13 @@
-function Avatar() {
+function Avatar(props) {
+    console.log(props)
     return (
   <div>
-      <h3>Your boy Thanos</h3>
-      <img src="https://imgur.com/8r5roqe.jpg"
-      alt="Thanos"
-      width={200}
-      height={200}
+      <h3>Your boy {props.name}</h3>
+      <img 
+      src={props.image}
+      alt={props.name}
+      width={props.width}
+      height={props.height}
       />
   </div>
     )
